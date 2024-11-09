@@ -1,0 +1,30 @@
+@font-face {
+    font-family: "Bebas Neue";
+    src: url(Fondid/BebasNeue-Regular.ttf);
+}
+
+body {
+    background-color: #476624d0;}
+
+h1.pealkiri {font-family: "Bebas Neue";
+                font-size: 250%;
+                border-bottom: 5px solid rgb(77, 110, 40);}
+
+h2.mexicanredknee {margin-left: 7%;
+                    margin-bottom: 1%;
+                    font-family: "Bebas Neue";
+                    font-size: 190%;}
+
+h2.chileanrose {margin-left: 7%;
+                margin-bottom: 1%;
+                font-family: "Bebas Neue";
+                font-size: 190%;}
+
+h2.brazilianblack {margin-left: 7%;
+                    margin-bottom: 1%;
+                    font-family: "Bebas Neue";
+                    font-size: 190%;}
+
+img.tarantel1 {border-radius: 25%;}
+img.tarantel2 {border-radius: 25%;}
+img.tarantel3 {border-radius: 25%;}
