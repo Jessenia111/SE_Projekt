@@ -43,7 +43,7 @@ p {
     width: 80%;
     margin: 50px auto;
     border-radius: 15px;
-    min-height: 300px;
+    min-height: 50px;
 }
 
 .photo {
@@ -146,4 +146,19 @@ p {
 
 .toggle-button:hover {
     background-color: #4682b4;
+}
+
+.hidden {
+    display: none; 
+}
+
+
+#infoContainer.show {
+    display: block; 
+    max-height: 5000px;
+    opacity: 1;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%; 
+    transition: all 0.5s ease;
 }
