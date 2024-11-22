@@ -3,12 +3,20 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
+    background-color: #E0FFFF
 }
 
 header {
-    background-color: #333;
-    color: white;
+    background-color: #177171;
+    color: #f8f8ff;
     padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-family: 'Georgia', serif;
+    font-size: 36px;
+    margin: 0;
 }
 
 nav ul {
@@ -17,23 +25,48 @@ nav ul {
     margin: 0;
     display: flex;
     justify-content: center;
-    background-color: #444;
+    flex-wrap: wrap; 
+    background-color: #4682b4;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    flex-direction: column; /* Меню становится вертикальным на узких экранах */
+       
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin-bottom: 10px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    padding: 10px 20px;
+    background-color: #5f9ea0;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    display: block; 
+    min-width: 120px; 
+    text-align: center;
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+    background-color: #7fffd4;
+    color: #2f4f4f;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
+
 
 main {
     padding: 20px;
+    font-family: 'Verdana', sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+    max-width: 800px;
+    margin: 20px auto;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
