@@ -8,22 +8,73 @@
 </head>
 <body>
 
-<header>
-    <h1>Eksootilised Loomad</h1>
-</header>
-
-<nav>
-    <ul>
-        <li><a href="index.html">Pealeht</a></li>
-        <li><a href="tarantel.html">Eksootiline Loom 1</a></li>
-        <li><a href="eksootiline_loom2.html">Eksootiline Loom 2</a></li>
-        <li><a href="eksootiline_loom3.html">Eksootiline Loom 3</a></li>
-    </ul>
-</nav>
+    <header>
+        <h1>Eksootilised Loomad</h1>
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    </header>
+    
+    <nav id="navigation" class="hidden">
+        <ul>
+            <li><a href="index.html">Pealeht</a></li>
+            <li><a href="tarantel.html">Tarantel</a></li>
+            <li><a href="eksootiline_loom2.html">Eksootiline Loom 2</a></li>
+            <li><a href="eksootiline_loom3.html">Aksolotl</a></li>
+        </ul>
+    </nav>
+    
 
 <main>
-    <p>Tere tulemast eksootiliste loomade veebisaidile! Klõpsake menüüs, et rohkem teada saada iga looma kohta.</p>
+    <div class="search-box">
+        <form id="searchForm" onsubmit="searchAnimal(event)">
+            <input 
+                type="text" 
+                id="searchInput" 
+                placeholder="Sisesta looma nimi..." 
+                aria-label="Otsing"
+                required>
+            <button type="submit" class="search-button">Otsi</button>
+        </form>
+    </div>
+
+    <h2>Tere tulemast!</h2>
+    <p>
+        Oled alati unistanud eksootilisest lemmikloomast, kuid ei tea, kuidas nende eest hoolitseda? 
+        See veebisait on loodud just sinu jaoks! Siit leiad olulist teavet ja praktilisi näpunäiteid 
+        selle kohta, kuidas luua oma eksootilisele lemmikloomale turvaline ja hoolitsev elukeskkond.
+    </p>
+    <p>
+        Tutvu meie lemmikloomade kategooriatega ja avasta, millised loomad sobivad kõige paremini sinu ellu. 
+        Olgu selleks haruldased tarantlid, armsad aksolotlid või teised eksootilised olendid – meie 
+        juhend aitab sul teha õige valiku!
+    </p>
 </main>
+
+<script>
+    function toggleMenu() {
+        const nav = document.getElementById("navigation");
+        nav.classList.toggle("hidden");
+    }
+</script>
+
+<script>
+    function searchAnimal(event) {
+        event.preventDefault(); 
+        const searchQuery = document.getElementById("searchInput").value.toLowerCase();
+
+        
+        if (searchQuery === "tarantel") {
+            window.location.href = "tarantel.html";
+        } else if (searchQuery === "eksootiline loom 2") {
+            window.location.href = "eksootiline_loom2.html";
+        } else if (searchQuery === "aksolotl") {
+            window.location.href = "eksootiline_loom3.html";
+        } else {
+            alert("Vabandame, kuid otsitud loom ei ole saadaval.");
+        }
+    }
+</script>
+
+
 
 </body>
 </html>
