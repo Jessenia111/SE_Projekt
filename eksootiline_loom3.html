@@ -9,6 +9,10 @@
 
 <header>
     <h1>AKSOLOTL</h1>
+    <div class="header-content">
+        <a href="index.html" class="back-button">Tagasi</a>
+    
+    </div>
 </header>
 
 
@@ -25,5 +29,51 @@
     </div>
     
 </div>
+
+<div class="box">
+    <button class="toggle-button" onclick="toggleTable()">Kuidas hoolitseda aksolotli eest</button>
+    <table class="care-table" id="careTable">
+        <thead>
+            <tr>
+                <th>Kategooria</th>
+                <th>Info</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Akvaarium</td>
+                <td>Minimaalne suurus 40 liitrit ühe aksolotli kohta. Vesi peaks olema filtreeritud, kuid tugev vool ei ole soovitatav.</td>
+            </tr>
+            <tr>
+                <td>Temperatuur</td>
+                <td>Ideaalne temperatuur on 16-20°C. Väldi temperatuure üle 24°C, kuna see võib põhjustada stressi ja haigusi.</td>
+            </tr>
+            <tr>
+                <td>Vee kvaliteet</td>
+                <td>pH tase peaks olema vahemikus 6,5-8. Regulaarne veevahetus (20% kord nädalas) on vajalik.</td>
+            </tr>
+            <tr>
+                <td>Toitumine</td>
+                <td>Aksoleotle sobivad elus toit, näiteks vihmaussid, väikesed kalad ja krevettid. Kuivtoit on vastuvõetav lisana.</td>
+            </tr>
+            <tr>
+                <td>Valgustus</td>
+                <td>Aksoleotle ei meeldi ere valgus. Kasutage pehmet valgustust või varjualasid.</td>
+            </tr>
+            <tr>
+                <td>Käsitsemine</td>
+                <td>Aksoleotlit ei soovitata sageli käsitseda, kuna nende nahk on tundlik ja kergesti vigastatav.</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<script>
+    function toggleTable() {
+        const table = document.getElementById('careTable');
+        table.classList.toggle('show');
+    }
+</script>
+
+
 </body>
 </html>
