@@ -4,7 +4,11 @@
 }
 
 body {
-    background-color: #476624d0;}
+    background-image: url(Pildid/junglebackgroundjpg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 100%;}
 
 h1.pealkiri {font-family: "Bebas Neue";
                 font-size: 280%;
