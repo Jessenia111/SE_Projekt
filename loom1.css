@@ -8,12 +8,14 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-    background-size: 100%;}
+    background-size: 100%;
+    color: #b4d99f}
 
 h1.pealkiri {font-family: "Bebas Neue";
                 font-size: 280%;
                 border-bottom: 5px solid #476525;
-                text-align: center;}
+                text-align: center;
+                text-shadow: 10px 10px 20px  #000000;}
 
 p.sissejuhatus {font-family: "Bebas Neue";
                 font-size: 140%;}
