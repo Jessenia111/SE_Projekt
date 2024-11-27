@@ -95,7 +95,8 @@ a { font-family: "Bebas Neue";
     transition: background-color 0.3 ease;
     padding: 5px 10px;
     background-color: #3b643b;
-    border-radius: 5px;}
+    border-radius: 5px;
+    cursor: pointer;}
 
 .toggle-button:hover {
     background-color: #284a28;
