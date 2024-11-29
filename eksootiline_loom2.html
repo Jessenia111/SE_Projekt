@@ -1,14 +1,179 @@
 <!DOCTYPE html>
-<html>
+<html lang="et">
 <head>
+    <meta charset="UTF-8">
     <link rel="stylesheet" href="loom2.css">
 
-<title>Eksootiline loom 2</title>
+
+    <title>Püüton</title>
 </head>
 <body>
 
-<h1>Eksootiline loom 2</h1>
-<p>Siia lehele tuleb informatsioon teise eksootilise looma kohta.</p>
+  <div class="parallax-gallery">
+    <div class="parallax active" style="background-image: url('img/pythongallery1.avif');"></div>
+    <div class="parallax" style="background-image: url('img/pythongallery2.jpg');"></div>
+    <div class="parallax" style="background-image: url('img/pythongallery4.webp');"></div>
+    <div class="parallax" style="background-image: url('img/pythongallery5.jpg');"></div>
+    <button class="gallery-btn left" onclick="prevImage()">&#10094;</button>
+    <button class="gallery-btn right" onclick="nextImage()">&#10095;</button>
+  </div>
+  
+
+  
+<header class="header">
+    <div class="header-content">
+      <a href="index.html" class="back-button">Tagasi</a>
+    </div>
+ 
+    <h1>PÜÜTON</h1>
+    <p>Saad teada, kuidas püütoni eest hoolitseda!</p>
+  
+
+</header>
+
+
+<main>
+    <section class="introduction">
+        <p>Püütonid on suured mittemürgised ahendavad maod, mis elavad Aafrika, Aasia ja Austraalia troopilistes piirkondades. Tänu oma elegantsele värvile, suhtelisele rahulikule käitumisele ja tagasihoidlikkusele on need loomad eksootiliste lemmikloomade fännide seas üsna populaarsed. Kuid nagu kõigi kodutamata loomade puhul, nõuab püütoni omamine erikohtlemist ning soovitame kõigil, kes kaaluvad lemmikloomapüütoni hankimist, põhjalikku seotud teabe uurimist.
+        </p>
+      </section>
+      <section class="species">
+        <h2>Populaarseimad püütoniliigid lemmikloomadena</h2>
+
+        <!-- Pildi zoom(laiendamine) -->
+        <div id="imageModal" class="modal">
+          <span class="close" onclick="closeModal()">&times;</span>
+          <img class="modal-content" id="modalImage">
+      </div>
+        <ul>
+            <li>
+                <button class="species-btn" onclick="toggleDetails('kuningpüüton')">Kuningpüüton</button>
+                <div id="kuningpüüton" class="species-details">
+                    <img src="img/ballpython2.jpg" alt="Kuningpüüton" class="details-img">
+                    <p>Suurus: emane keskmine 1.2 m, isane 0.7 m</p>
+                    <p>Eluiga: u 30 aastat</p>
+                    <p>Iseloom: Rahulik ja kergesti käsitletav, ideaalne algajatele.</p>
+                </div>
+            </li>
+            <li>
+                <button class="species-btn" onclick="toggleDetails('birma-püüton')">Birma püüton</button>
+                <div id="birma-püüton" class="species-details">
+                  <img src="img/birmapüüton.jpg" alt="birma-püüton" class="details-img">
+                  <p>Suurus: keskmine 4.9 m</p>
+                  <p>Eluiga: 20–25 aastat</p>
+                  <p>Iseloom: kuulekas, kuid nõuab palju ruumi ja hoolt.</p>
+                </div>
+              </li>
+              <li>
+                <button class="species-btn" onclick="toggleDetails('vaibapüüton')">Vaibapüüton</button>
+                <div id="vaibapüüton" class="species-details">
+                  <img src="img/carpetpython.webp" alt="vaibapüüton" class="details-img">
+                  <p>Suurus: keskmine 2.1 m, emased võivad kasvada 2.8 m pikkuseni</p>
+                  <p>Eluiga: 15–20 aastat</p>
+                  <p>Iseloom: Aktiivne ja uudishimulik, korralikult sotsialiseerituna üldiselt rahuliku käitumisega, kipub vanuse ja käsitsemisega leevenema.</p>
+                </div>
+              </li>
+              <li>
+                <button class="species-btn" onclick="toggleDetails('roheline-puu-püüton')">Roheline Puu Püüton</button>
+                <div id="roheline-puu-püüton" class="species-details">
+                  <img src="img/greentreepython.jpg" alt="roheline-puu-püüton" class="details-img">
+                  <p>Suurus: keskmine 1.2 m, emased võivad kasvada 1.6 m pikkuseni</p>
+                  <p>Eluiga: keskmiselt 15 aastat</p>
+                  <p>Iseloom: Võib olla kaitsev, eriti alaealistena, ja võib stressi korral lüüa. Algajatele ei sobi.</p>
+                </div>
+              </li>
+              <li>
+                <button class="species-btn" onclick="toggleDetails('verepüüton')">Verepüüton</button>
+                <div id="verepüüton" class="species-details">
+                  <img src="img/verepüüton.webp" alt="verepüüton" class="details-img">
+                  <p>Suurus: keskmine 1.5 m</p>
+                  <p>Eluiga: 20-25 aastat</p>
+                  <p>Iseloom: üsna aeglane, kuid võib olla kaitsev ja aggressiivne, korraliku käsitsemise korral võib muutuda rahulikuks.</p>
+                </div>
+              </li>
+
+        </ul>
+      </section>
+      <section class="buying">
+        <h2>Püütoni ostmine</h2>
+        <p>Enne looma ostmise, pead teadma </p>
+        <ol>
+            <li>Uuri liike põhjalikult (suurus, temperament, hooldusvajadused).</li>
+            <li>Vali hea mainega kasvataja või lemmikloomapood, kellel on head arvustused.</li>
+            <li>Kontrolli madude põlvnemist, terviseandmeid ja hoolduslugu.</li>
+            <li>Hinnad algavad umbes <strong>100 eurost</strong>.</li>
+            <li>Väldi loodusest püütud isendeid.</li>
+          </ol>
+      </section>
+
+    <section class="keeping">
+        <h2>Püütoni pidamine</h2>
+        <div class="accordion">
+            <button class="accordion-btn">Terraarium</button>
+            <div class="accordion-content">
+                <p>Peaks olema avar täiskasvanud püütonile (minimum 1,2 x 2,4 m). Kaasa uurimiseks kaunistusi ja väldi kahe püütoni koos majutamist.</p>
+            </div>
+            <button class="accordion-btn">Temperatuur ja niiskus</button>
+            <div class="accordion-content">
+                <p>Kõige külmemas nurgas ei tohi temperatuur olla alla 26 °C, kõige soojemas – kuni 32–36 °C. Püütonile sobiv tausttemperatuur on umbes 28 °C. Optimaalne õhuniiskus on 80–90%.</p>
+            </div>
+            <button class="accordion-btn">Välk</button>
+            <div class="accordion-content">
+                <p>Maod ei vaja täisspektri/UV välku, selle saab paigaldada, kuid parem on ööseks välja lülitada. Veendu, et madu ei puutuks lambipirniga otse kokku.</p>
+            </div>
+            <button class="accordion-btn">Puhastamine</button>
+            <div class="accordion-content">
+                <p>Terraariumi ja dekoratsioone tuleks puhastada iga paari päeva kuni kord nädalas, kasutades pehmet seepi, söömata toit tuleks eemaldada iga päev.</p>
+            </div>
+            <button class="accordion-btn">Substraat</button>
+            <div class="accordion-content">
+                <p>On eelistatud spetsiaalne roomajate vaipkate, paberrätikud, ajaleht, võib kasutada dekoratiivpinnast (st hakitud küpress, kuusekoor) Vältida tuleb puitlaastu, niiskust hoidvaid materjale (sammal).</p>
+            </div>
+        </div>
+    </section>
+    
+
+      <section class="feeding">
+        <h2>Püütoni toitmine </h2>
+        <div class="feeding-container">
+          <div class="column">
+            <h3>Külmutatud röövsaak</h3>
+            <ul>
+              <li>Ohutum ja parasiidivaba.</li>
+              <li>Enne söötmist tuleks sulatada kuni 40°C, et see eraldaks soojuskiirgust.</li>
+              <li>Väiksem madu vigastamise oht.</li>
+            </ul>
+          </div>
+          <div class="column">
+            <h3>Elus röövsaak</h3>
+            <ul>
+              <li>Madu kohaneb elusa saagiga kiiremini.</li>
+              <li>Võib kanda parasiite või baktereid.</li>
+              <li>Elus saakloom võib madu vigastada.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="vet-checklist">
+        <h2>Millal pöörduda loomaarsti poole</h2>
+        <ul class="checklist">
+          <li>Iga-aastased füüsilised eksamid on üliolulised.</li>
+          <li>Esialgne füüsiline läbivaatus tuleb teha.</li>
+          <li>Loomaarsti tähelepanu nõuavad tingimused:</li>
+          <ul>
+            <li>Anoreksia (isutus).</li>
+            <li>Säilitatud kuur (puudulik kuur).</li>
+            <li>Füüsiline vigastus.</li>
+            <li>Bakteriaalsed infektsioonid või abstsessid.</li>
+            <li>Reproduktiivhaigus.</li>
+            <li>Rasvumine või kehakaalu muutused.</li>
+          </ul>
+        </ul>
+      </section>
+</main>
+
+
+<script src = "loom2.js"> </script>
 
 </body>
 </html>
