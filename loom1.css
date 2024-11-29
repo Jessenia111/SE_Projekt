@@ -95,12 +95,12 @@ a { font-family: "Bebas Neue";
     transition: background-color 0.3 ease;
     padding: 5px 10px;
     background-color: #3b643b;
-    border-radius: 5px;
-    cursor: pointer;}
+    border-radius: 5px;}
 
 .toggle-button:hover {
     background-color: #284a28;
-    color: #132004;}
+    color: #132004;
+    cursor: pointer;}
 
 .hooldusnõuded {
     font-family: "Bebas Neue";
