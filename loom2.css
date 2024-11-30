@@ -112,7 +112,7 @@ body {
 
 .introduction p {
   margin: 20px;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.5;
   color: #c2b69e;
   font-weight: bold;
@@ -123,7 +123,8 @@ body {
   text-align: center;
   margin-top: 40px;
   color: rgb(166, 167, 164);
-  font-size: 24px
+  font-size: 28px;
+  font-family: 'Lora';
 }
 
 .modal {
@@ -232,69 +233,69 @@ body {
   
 }
 
-.accordion-btn {
-  background-color: #423722;
-  color: #b0abab;
-  padding: 15px;
-  width: 100%;
-  text-align: left;
-  border: none;
-  border-radius: 5px;
-  font-size: 1.2em;
-  cursor: pointer;
-  margin: 5px 0;
-}
-
-.accordion-btn:hover {
-  background-color: #004d00;
-}
-
-.accordion-content {
-  display: none;
-  padding: 10px;
-  background-color: #233f26;
-  border-radius: 5px;
-  margin-bottom: 10px;
-  color: #e4e4e4;
-}
-
-.accordion-content p {
-  margin: 0;
-}
-
-
-
-.feeding-container {
-  display: flex;
-  justify-content: space-around;
-  margin: 20px;
-}
-
-.column {
-  background: #2f482f;
+.content-wrapper {
+  margin: 20px auto;
   padding: 20px;
-  border-radius: 10px;
-  width: 45%;
-  margin: 10px auto;
 }
 
-.column h3 {
-  color: #003300;
+.content-wrapper h2 {
+  text-align: center;
+  margin-top: 40px;
+  color: rgb(166, 167, 164);
+  font-size: 30px;
+  font-family: 'Lora';
 }
 
-ul {
-  padding-left: 20px;
+.two-column {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  color: #4b2920;
 }
 
+.two-column .column {
+  background: #768d3f;
+  padding: 15px;
+  border-radius: 8px;
+  flex: 1;
+  font-weight: bold;
+  font-size: 18px;
+}  
 
-.checklist li {
-  margin: 10px;
-  padding: 5px;
-  background: #283f2c;
-  border-radius: 5px;
+.two-column h3 {
+  font-weight: bolder;
+  font-size: 28px;
+}
+   
+
+
+.keeping-content {
+  display: flex;
+  gap: 20px;
+}
+
+.terrarium-img {
+  width: 40%;
+  border-radius: 8px;
+}
+
+.info-table {
+  width: 60%;
+  border-collapse: collapse;
+}
+
+.info-table thead th {
+  background: #004d00;
+  color: white;
+  padding: 10px;
+}
+
+.info-table tbody td {
+  padding: 10px;
+  border: 1px solid #ddd;
 }
 
 
 button {
   transition: all 0.3s ease-in-out;
-}
+}  
