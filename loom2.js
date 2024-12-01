@@ -7,6 +7,9 @@ https://www.w3schools.com/howto/howto_css_modals.asp
 https://webdesign.tutsplus.com/how-to-build-flexible-modal-dialogs-with-html-css-and-javascript--cms-33500t
 https://www.w3schools.com/howto/howto_css_modal_images.asp
 */
+
+'use strict';
+
 function toggleDetails(id) {
     const element = document.getElementById(id);
     element.classList.toggle('visible');
